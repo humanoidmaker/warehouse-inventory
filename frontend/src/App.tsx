@@ -8,6 +8,7 @@ import Products from '@/pages/Products';
 import StockIn from '@/pages/StockIn';
 import StockOut from '@/pages/StockOut';
 import Suppliers from '@/pages/Suppliers';
+import PurchaseOrders from '@/pages/PurchaseOrders';
 import Reports from '@/pages/Reports';
 import Settings from '@/pages/Settings';
 
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="stock-in" element={<StockIn />} />
           <Route path="stock-out" element={<StockOut />} />
           <Route path="suppliers" element={<Suppliers />} />
+          <Route path="purchase-orders" element={<PurchaseOrders />} />
           <Route path="reports" element={<Reports />} />
           <Route path="settings" element={<Settings />} />
       </Route>

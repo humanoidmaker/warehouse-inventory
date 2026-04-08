@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
-import { Settings, LayoutDashboard, ChevronLeft, ChevronRight, ArrowDownToLine, Truck, ArrowUpFromLine, Package, BarChart3 } from 'lucide-react';
+import { Settings, LayoutDashboard, ChevronLeft, ChevronRight, ArrowDownToLine, Truck, ArrowUpFromLine, Package, BarChart3, ClipboardList } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useAuthStore } from '@/stores/authStore';
 
@@ -10,6 +10,7 @@ const NAV = [
     { to: "/stock-in", label: "Stock In", icon: ArrowDownToLine },
     { to: "/stock-out", label: "Stock Out", icon: ArrowUpFromLine },
     { to: "/suppliers", label: "Suppliers", icon: Truck },
+    { to: "/purchase-orders", label: "Purchase Orders", icon: ClipboardList },
     { to: "/reports", label: "Reports", icon: BarChart3 },
     { to: "/settings", label: "Settings", icon: Settings },
 ];
